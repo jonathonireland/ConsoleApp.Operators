@@ -1,11 +1,10 @@
 ﻿
-int num2 = 0;
+
 Console.Write("Please enter the first number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Please enter the second number: ");
-string numberEntered = Console.ReadLine();
-num2 = Convert.ToInt32(numberEntered);
+int num2 = Convert.ToInt32(Console.ReadLine());
 
 /*
     Math Operations and Operators
@@ -60,15 +59,24 @@ Console.WriteLine();
 
 Console.WriteLine("****************** ASSIGNMENT RESULTS ******************");
 Console.WriteLine();
-num1 += 5;
-Console.WriteLine($"Num 1 increased by 5: {num1}");
-num1 -= 3;
-Console.WriteLine($"Num 1 reduced by 3: {num1}");
-num1 /= 2;
-Console.WriteLine($"Num 1 divided by 2: {num1}");
-num1 %= 2;
-Console.WriteLine($"Num 1 mod by 2: {num1}");
-num1 *= 10;
-Console.WriteLine($"Num 1 multiplied by 10: {num1}");
+Console.Write("Enter Random Value for Assignment Operations: ");
+int randomValue = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+// num1 = num1 + randomValue
+num1 += randomValue;
+Console.WriteLine($"Num 1 increased by {randomValue}: {num1}");
+// num1 = num1 - randomValue
+num1 -= randomValue;
+Console.WriteLine($"Num 1 reduced by {randomValue}: {num1}");
+// num1 = num1 / randomValue
+num1 /= randomValue;
+Console.WriteLine($"Num 1 divided by {randomValue}: {num1}");
+// num1 = num1 % randomValue
+num1 %= randomValue;
+Console.WriteLine($"Num 1 mod by {randomValue}: {num1}");
+// num1 = num1 * randomValue
+num1 *= randomValue;
+Console.WriteLine($"Num 1 multiplied by {randomValue}: {num1}");
+Console.WriteLine();
 Console.WriteLine("****************** END ASSIGNMENT RESULTS ******************");
 Console.WriteLine();
